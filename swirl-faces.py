@@ -88,7 +88,8 @@ def swirlFaces(imagePath):
             new_w, new_h = min(image.shape[1] - new_x, new_w), min(image.shape[0] - new_y, new_h)
 
             face_img = image[new_y:new_y+new_h, new_x:new_x+new_w]
-            swirled_face = swirl_effect(face_img, (new_w//2, new_h//2), min(new_w//2, new_h//2), random.choice(direction) * random.randrange(args.minangle,args.maxangle), args.tension)  # Angle set to 270 degrees
+            # Apply the swirl effect at either the defaults or user provided values.
+            swirled_face = swirl_effect(face_img, (new_w//2, new_h//2), min(new_w//2, new_h//2), random.choice(direction) * random.randrange(args.minangle,args.maxangle), args.tension)
             image[new_y:new_y+new_h, new_x:new_x+new_w] = swirled_face
 
         cv2.imwrite('swirled_' + imagePath, image)
