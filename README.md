@@ -25,8 +25,9 @@ python3 swirl-faces.py --help
 ```
 
 # Example Usage
-This application is invoked from the command line via `python. Here is an example usage of targeting one file with an explanation on the params being used. Image was kindly provided by a friend.
+This application is invoked from the command line via `python. Here is an example usage of targeting one file with an explanation on the params being used. The input image was kindly provided by a friend.
 ### Input:
+![ffxiv_dx11_2019-05-17_21-10-14](https://github.com/user-attachments/assets/27806eca-65d2-4139-b736-931d9df50896)
 
 ### CLI:
 ```
@@ -34,6 +35,7 @@ python3.exe swirl-faces.py --anime -t 1 -min 180 -max 720 -r 1.25 -f "ffxiv_dx11
 ```
 
 ### Output:
+![swirled_ffxiv_dx11_2019-05-17_21-10-14](https://github.com/user-attachments/assets/7f9e5bdf-6646-4d83-8017-c2392efd7bc9)
 
 ### Details
 Working backwards from the flags provided in the CLI example, we can see the following:
